@@ -1,0 +1,36 @@
+{
+  "name": "focus_sv_solution",
+  "version": "1.0.0",
+  "description": "Solucion del desafio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Saludos desde la zona Oriental\"",
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnmz86/focus_sv_solution.git"
+  },
+  "keywords": [
+    "challenge",
+    "solution",
+    "fun"
+  ],
+  "author": "Martín Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnmz86/focus_sv_solution/issues"
+  },
+  "homepage": "https://github.com/mnmz86/focus_sv_solution#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
