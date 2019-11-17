@@ -5,7 +5,8 @@
 img {
     width: 150px;
     height: 150px;
+    
 }
-.user-info {
-    display: inline;
+.red{
+    color: red;
 }
