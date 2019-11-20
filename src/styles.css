@@ -25,6 +25,7 @@ user-info {
     user-info {
         width: auto;
         text-align: center;
+        margin: 5%
     }
 }
 
@@ -48,8 +49,8 @@ user-info {
 /* pc */
 @media screen and (min-width: 1024px) {
     user-info {
-        width: 30%;
-        margin 1.5%;
+        width: 28%;
+        margin: 2.5%;
     }
 
     img, h2 {
