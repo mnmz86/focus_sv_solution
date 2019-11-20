@@ -1,12 +1,59 @@
+
 * {
     margin: 0;
     padding: 0;
   }
+
 img {
-    width: 150px;
-    height: 150px;
-    
+    width: 125px;
+    height: 125px;
+    border: red 2px solid;
+    margin: 10px;
 }
+
 .red{
     color: red;
+}
+
+user-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* smartphones landscape */
+@media screen and (max-width: 599px) {
+    user-info {
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* tablets */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    user-info {
+        width: 45%;
+        text-align: justify;
+        margin: 2.5%;
+    }
+    
+    img, h2 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    h2 {
+        width: 125px;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1024px) {
+    user-info {
+        width: 30%;
+        margin 1.5%;
+    }
+
+    img, h2 {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }

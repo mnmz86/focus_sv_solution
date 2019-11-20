@@ -13,8 +13,6 @@ export default class PostContainer extends HTMLElement{
             <p>${this.post.title}</p>
         `;
         let postNode = document.createElement('div');
-        postNode.setAttribute('class', 'post-container');
-        postNode.setAttribute('id', `post_${this.post.id}`);
         postNode.innerHTML = postTemplate;
         this.appendChild(postNode);
     }
