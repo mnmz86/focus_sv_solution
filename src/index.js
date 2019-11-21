@@ -3,7 +3,13 @@ import UserInfo from './components/user-info.js';
 import {getAllData} from './services.js';
 
 let rootTag = document.getElementById('root');
-getAllData().then(users => {
+getAllData()
+    .then(users => 
+        users.sort(
+            (userX, userY) => userX.name.localeCompare(userY.name)
+        )
+    )
+    .then(users => {
     users.forEach(user => {
         let userTag = document.createElement('user-info');
         userTag.setAttribute('data-user', JSON.stringify(user));
