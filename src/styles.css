@@ -11,8 +11,20 @@ img {
     margin: 10px;
 }
 
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
 .red{
     color: red;
+}
+
+p {
+        font-family: 'Courier New', Courier, monospace;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 }
 
 user-info {
@@ -20,20 +32,22 @@ user-info {
     vertical-align: top;
 }
 
+user-info + div {
+    margin: 10px;
+}
 /* smartphones landscape */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
     user-info {
-        width: auto;
+        width: 90%;
         text-align: center;
         margin: 5%
     }
 }
 
 /* tablets */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     user-info {
         width: 45%;
-        text-align: justify;
         margin: 2.5%;
     }
     
@@ -41,20 +55,26 @@ user-info {
         display: inline-block;
         vertical-align: middle;
     }
-    h2 {
-        width: 125px;
-    }
 }
 
 /* pc */
 @media screen and (min-width: 1024px) {
     user-info {
-        width: 28%;
-        margin: 2.5%;
+        width: 30%;
+        margin: 1.5%;
+    }
+    
+    #root {
+        padding: 5%;
+        max-width: 1024;
+        justify-content: center;
     }
 
     img, h2 {
         display: inline-block;
         vertical-align: middle;
+    }
+    h2 {
+        width: min-content;
     }
 }
