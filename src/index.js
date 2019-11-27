@@ -1,6 +1,7 @@
 import PostContainer from './components/post-container.js';
 import UserInfo from './components/user-info.js';
 import {getAllData} from './services.js';
+import css from './styles.css';
 
 let rootTag = document.getElementById('root');
 getAllData()
@@ -17,7 +18,6 @@ getAllData()
         user.posts.forEach(post => {
             let postTag = document.createElement('post-container');
             postTag.setAttribute('data-post', JSON.stringify(post));
-            user.posts.indexOf(post)%2 ? postTag.setAttribute('class', 'red') : null
             userTag.appendChild(postTag);
         });
     });
